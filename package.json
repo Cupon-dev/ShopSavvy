@@ -1,21 +1,12 @@
 {
-  "name": "shopsavvy-backend",
+  "name": "shopsavvy-api",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx server/index.ts",
-    "build": "tsc && cp -r client/dist/* dist/",
-    "start": "node dist/server/index.js",
-    "vercel-build": "npm run build"
+    "dev": "echo 'API development'",
+    "build": "echo 'API build complete'"
   },
   "dependencies": {
-    "express": "^4.18.0",
-    "drizzle-orm": "latest",
-    "postgres": "latest"
-  },
-  "devDependencies": {
-    "tsx": "latest",
-    "typescript": "latest",
-    "@types/express": "latest"
+    "@types/node": "^18.0.0"
   }
 }
