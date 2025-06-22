@@ -1,0 +1,23 @@
+# In your GitHub Codespaces terminal
+cat > vercel.json << 'EOF'
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server/index.ts"
+    }
+  ]
+}
+EOF
+
+# Commit and push changes
+git add vercel.json
+git commit -m "Add Vercel configuration"
+git push
