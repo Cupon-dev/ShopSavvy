@@ -1,12 +1,7 @@
 {
   "name": "shopsavvy-api",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "echo 'API development'",
-    "build": "echo 'API build complete'"
-  },
-  "dependencies": {
-    "@types/node": "^18.0.0"
+    "build": "echo 'Build complete'"
   }
 }
